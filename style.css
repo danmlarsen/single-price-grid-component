@@ -18,7 +18,7 @@ body {
     font-family: 'Karla', sans-serif;
     color: var(--light-gray);
     background: var(--light-gray);
-    padding: 32px;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@ h3 {
     display: inline-block;
     width: 100%;
     max-width: 300px;
-    padding: 16px;
+    padding: 1rem;
     background: var(--bright-yellow);
     text-decoration: none;
     text-align: center;
