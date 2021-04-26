@@ -55,11 +55,6 @@ h3 {
     opacity: .85;
 }
 
-.flex-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
 .card {
     max-width: 400px;
     border-radius: 10px;
@@ -138,14 +133,12 @@ h3 {
 @media only screen and (min-width: 600px) {
     .card {
         max-width: 700px;
+        display: grid;
+        grid-template-columns: repeat(1fr, 2);
     }
 
-    .flex-wrapper {
-        flex-direction: row;
-    }
-
-    .flex-wrapper div {
-        flex: 1;
+    .card .card__info {
+        grid-column: span 2;
     }
 
     .card .card__info,
