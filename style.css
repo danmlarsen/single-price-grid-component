@@ -4,6 +4,7 @@
     --cyan: hsl(179, 62%, 43%);
     --light-cyan: hsl(179, 47%, 52%);
     --bright-yellow: hsl(71, 73%, 54%);
+    --bright-yellow--darker: hsl(71, 73%, 44%);
     --grayish-blue: hsl(218, 22%, 67%);
     --light-gray: hsl(204, 43%, 93%);
 }
@@ -22,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 h1 {
@@ -52,13 +53,14 @@ h3 {
 }
 
 .btn:hover {
-    opacity: .85;
+    background: var(--bright-yellow--darker);
 }
 
 .card {
     max-width: 400px;
     border-radius: 10px;
     overflow: hidden;
+    margin: 1rem 0;
 }
 
 .card .card__info,
